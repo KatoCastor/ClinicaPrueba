@@ -329,3 +329,13 @@ function initApp() {
 
 /* lanzar inicialización cuando DOM esté listo */
 document.addEventListener("DOMContentLoaded", initApp);
+// Esto va al final de tu js/app.js
+document.addEventListener('DOMContentLoaded', () => {
+  const musica = document.getElementById('musicaFondo');
+  document.body.addEventListener('click', () => {
+    if (musica.paused) {
+      musica.volume = 0.3; // volumen bajo
+      musica.play().catch(err => console.log(err));
+    }
+  });
+});
