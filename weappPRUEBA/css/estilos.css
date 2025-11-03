@@ -1,0 +1,202 @@
+/* === CONFIGURACIÓN GENERAL === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: 
+    linear-gradient(135deg, rgba(30,30,30,0.5), rgba(45,45,45,0.5)),
+    url("../img/rocky.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e0e0e0;
+}
+
+/* === ENCABEZADO === */
+header {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px); /* efecto vidrio */
+  color: #222;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+header .logo {
+  width: 80px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+/* === SECCIONES GENERALES === */
+main {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.6); /* blanco translúcido */
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+section {
+  display: none;
+}
+
+section.visible {
+  display: block;
+}
+
+h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* === FORMULARIOS === */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  resize: none;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: scale(1.02);
+}
+
+.btn-secundario {
+  background-color: #b0bec5;
+  color: #333;
+}
+
+.btn-secundario:hover {
+  background-color: #90a4ae;
+}
+
+/* === TABLA HISTORIAL === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: rgba(0, 0, 0, 0.4); /* fondo oscuro translúcido */
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  overflow: hidden;
+  color: #f1f1f1; /* texto claro */
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: left;
+}
+
+th {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* sutil efecto al pasar el mouse */
+}
+
+/* === ENLACES === */
+a {
+  color: #fff; /* blanco */
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ddd; /* blanco más suave al pasar el mouse */
+  text-decoration: underline;
+}
+    
+/* === BOTONES Y MENSAJES === 
+p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}*/
+
+/* === TEXTOS === */
+h1, h2, h3, label, p {
+  color: #222; /* gris oscuro elegante */
+}
+
+/* === CAMPOS DE TEXTO === */
+input, select, textarea {
+  background-color: rgba(255, 255, 255, 0.8); /* blanco translúcido */
+  border: 1px solid rgba(200, 200, 200, 0.8);
+  color: #000;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #666;
+}
+
+/* === BOTONES Y MENSAJES === */
+p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #111;
+}
+a.registro {
+  color: #fff; /* blanco */
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a.registro:hover {
+  color: #ddd; /* un blanco más suave al pasar el mouse */
+  text-decoration: underline;
+}
+
